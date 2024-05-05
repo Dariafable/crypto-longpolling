@@ -5,7 +5,7 @@ import { Currencies } from "./components";
 import { useLongpolling } from "./customHooks";
 import { FIRST_ENDPOINT, SECOND_ENDPOINT, THIRD_ENDPOINT } from "./constants";
 import { TCurrenciesData, TArrayData } from "./types";
-import { getMinValue } from "./helpers/getMinValue";
+import { getMinValue } from "./helpers/helpers";
 
 const getCurrenciesData = (
   firstPoint: TCurrenciesData,
