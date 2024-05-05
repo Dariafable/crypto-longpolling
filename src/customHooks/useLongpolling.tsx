@@ -6,7 +6,7 @@ import { TCurrenciesData, TEndpoint } from "../types";
 const URL = "http://localhost:3000/api/v1";
 
 const useLongpolling = ({ path, longpolling }: TEndpoint) => {
-  const [data, setData] = React.useState<TCurrenciesData | null>(null);
+  const [data, setData] = React.useState<TCurrenciesData>({});
 
   const getData = async () => {
     try {
