@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Raleway&display=swap");
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 120px 10px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+
+  background: rgb(189, 189, 228);
+  background: -moz-linear-gradient(90deg, rgba(189, 189, 228, 1) 0%, rgba(123, 138, 176, 1) 100%);
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(189, 189, 228, 1) 0%,
+    rgba(123, 138, 176, 1) 100%
+  );
+  background: linear-gradient(90deg, rgba(189, 189, 228, 1) 0%, rgba(123, 138, 176, 1) 100%);
+}
