@@ -48,7 +48,13 @@ const App = () => {
     Object.keys(secondPoint).length === 0 ||
     Object.keys(thirdPoint).length === 0
   ) {
-    return <div>Waiting for data... Keep calm and take a coffee</div>;
+    return (
+      <div>
+        Waiting for data...
+        <br />
+        Keep calm and take a coffee
+      </div>
+    );
   }
 
   return (
