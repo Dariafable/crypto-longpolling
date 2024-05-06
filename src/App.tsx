@@ -5,7 +5,7 @@ import { Currencies } from "./components";
 import { useLongpolling } from "./customHooks";
 import { FIRST_ENDPOINT, SECOND_ENDPOINT, THIRD_ENDPOINT } from "./constants";
 import { TCurrenciesData, TArrayData } from "./types";
-import { getMinValue } from "./helpers/helpers";
+import { getMinValue } from "./utils/helpers";
 
 const getCurrenciesData = (
   firstPoint: TCurrenciesData,
@@ -38,7 +38,6 @@ const App = () => {
   const firstPoint = useLongpolling(FIRST_ENDPOINT);
   const secondPoint = useLongpolling(SECOND_ENDPOINT);
   const thirdPoint = useLongpolling(THIRD_ENDPOINT);
-  console.log(firstPoint, secondPoint, thirdPoint);
 
   const currenciesFullData = getCurrenciesData(firstPoint, secondPoint, thirdPoint);
   const currenciesFixedData = Object.entries(currenciesFullData);

@@ -1,6 +1,6 @@
 import React from "react";
 import { TCurrencyItemProps } from "../../types";
-import { formatNumber } from "../../helpers/helpers";
+import { formatNumber } from "../../utils/helpers";
 
 import "./CurrencyItemStyles.css";
 
