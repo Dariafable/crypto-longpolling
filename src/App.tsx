@@ -43,7 +43,11 @@ const App = () => {
   const currenciesFixedData = Object.entries(currenciesFullData);
   const minValueCurrency = getMinValue(currenciesFullData);
 
-  if (!firstPoint || !secondPoint || !thirdPoint) {
+  if (
+    Object.keys(firstPoint).length === 0 ||
+    Object.keys(secondPoint).length === 0 ||
+    Object.keys(thirdPoint).length === 0
+  ) {
     return <div>Waiting for data... Keep calm and take a coffee</div>;
   }
 
