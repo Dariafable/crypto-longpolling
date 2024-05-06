@@ -1,3 +1,9 @@
+.currency-item {
+  padding: 6px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
 .min-value {
   background: lightgray;
 }

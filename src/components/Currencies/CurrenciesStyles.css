@@ -13,9 +13,3 @@
   grid-template-rows: repeat(auto, 1fr);
   grid-gap: 12px;
 }
-
-.list-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}

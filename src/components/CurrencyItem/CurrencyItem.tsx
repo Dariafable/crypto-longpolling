@@ -7,12 +7,14 @@ import "./CurrencyItemStyles.css";
 const CurrencyItem = ({ title, values, minValueCurrency }: TCurrencyItemProps) => {
   return (
     <>
-      <div>{title}</div>
+      <div className="currency-item">{title}</div>
       {values.map((value, index) => (
         <div
           key={index}
           className={
-            typeof value === "number" && formatNumber(value) === minValueCurrency ? "min-value" : ""
+            typeof value === "number" && formatNumber(value) === minValueCurrency
+              ? "currency-item min-value"
+              : "currency-item"
           }
         >
           {typeof value === "number" ? formatNumber(value) : ""}
