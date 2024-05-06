@@ -15,7 +15,7 @@ const Currencies = ({ minValueCurrency, currencies }: TCurrenciesContentProps) =
 
       {currencies.map(([title, values], index) => (
         <CurrencyItem
-          key={values[index]}
+          key={index}
           title={title}
           values={values}
           minValueCurrency={minValueCurrency}
