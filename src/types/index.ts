@@ -10,7 +10,13 @@ export type TArrayData = {
   [key: string]: [number, number, number];
 };
 
-export type TContentProps = {
+export type TCurrenciesContentProps = {
   currencies: Array<[string, [number, number, number]]>;
+  minValueCurrency: number;
+};
+
+export type TCurrencyItemProps = {
+  title: string;
+  values: [number, number, number];
   minValueCurrency: number;
 };

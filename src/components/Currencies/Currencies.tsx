@@ -1,25 +1,27 @@
 import React from "react";
 import CurrencyItem from "../CurrencyItem/CurrencyItem";
 
-import { TContentProps } from "../../types";
+import { TCurrenciesContentProps } from "../../types";
+import { LIST_HEAD } from "../../constants";
 
 import "./CurrenciesStyles.css";
 
-const Currencies = ({ minValueCurrency, currencies }: TContentProps) => {
-  if (!currencies) {
-    return <div>Waiting for data... Keep calm and take a coffee.</div>;
-  }
-
+const Currencies = ({ minValueCurrency, currencies }: TCurrenciesContentProps) => {
   return (
-    <ul className="table">
-      <li className="table-head">
-        <div className="table-headData">Pair name/market</div>
-        <div className="table-headData">First</div>
-        <div className="table-headData">Second</div>
-        <div className="table-headData">Third</div>
-      </li>
-      <CurrencyItem />
-    </ul>
+    <div className="list">
+      {LIST_HEAD.map((item) => (
+        <h3 key={item}>{item}</h3>
+      ))}
+
+      {currencies.map(([title, values], index) => (
+        <CurrencyItem
+          key={values[index]}
+          title={title}
+          values={values}
+          minValueCurrency={minValueCurrency}
+        />
+      ))}
+    </div>
   );
 };
 

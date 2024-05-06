@@ -21,3 +21,5 @@ export const THIRD_ENDPOINT = {
   path: "third",
   longpolling: "third/poll",
 };
+
+export const LIST_HEAD = ["Pair name/market", "First", "Second", "Third"];

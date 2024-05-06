@@ -43,6 +43,10 @@ const App = () => {
   const currenciesFixedData = Object.entries(currenciesFullData);
   const minValueCurrency = getMinValue(currenciesFullData);
 
+  if (!firstPoint || !secondPoint || !thirdPoint) {
+    return <div>Waiting for data... Keep calm and take a coffee</div>;
+  }
+
   return (
     <>
       <Currencies minValueCurrency={minValueCurrency} currencies={currenciesFixedData} />
