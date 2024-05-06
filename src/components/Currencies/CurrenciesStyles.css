@@ -1,6 +1,5 @@
 .list {
   max-width: 800px;
-  width: 100%;
   margin: 0 auto;
   padding: 12px;
 
@@ -12,4 +11,15 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(auto, 1fr);
   grid-gap: 12px;
+
+  @media screen and (max-width: 400px) {
+    grid-gap: 6px;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  }
+}
+
+.list-head {
+  @media screen and (max-width: 400px) {
+    font-size: 12px;
+  }
 }

@@ -10,7 +10,9 @@ const Currencies = ({ minValueCurrency, currencies }: TCurrenciesContentProps) =
   return (
     <div className="list">
       {LIST_HEAD.map((item) => (
-        <h3 key={item}>{item}</h3>
+        <h3 className="list-head" key={item}>
+          {item}
+        </h3>
       ))}
 
       {currencies.map(([title, values], index) => (
