@@ -38,6 +38,7 @@ const App = () => {
   const firstPoint = useLongpolling(FIRST_ENDPOINT);
   const secondPoint = useLongpolling(SECOND_ENDPOINT);
   const thirdPoint = useLongpolling(THIRD_ENDPOINT);
+  console.log(firstPoint, secondPoint, thirdPoint);
 
   const currenciesFullData = getCurrenciesData(firstPoint, secondPoint, thirdPoint);
   const currenciesFixedData = Object.entries(currenciesFullData);
