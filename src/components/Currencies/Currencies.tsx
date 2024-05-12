@@ -1,4 +1,5 @@
 import React from "react";
+
 import CurrencyItem from "../CurrencyItem/CurrencyItem";
 
 import { TCurrenciesContentProps } from "../../types";

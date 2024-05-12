@@ -22,6 +22,7 @@ const useLongpolling = ({ path, longpolling }: TEndpoint) => {
       const response = await axios.get(`${URL}/${longpolling}`);
       setData(response.data.rates);
       updateData();
+      //setTimeout(updateData, 3000);
     } catch (error) {
       console.log(error);
       setTimeout(updateData, 1000);

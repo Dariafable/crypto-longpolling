@@ -1,4 +1,5 @@
 import React from "react";
+
 import { TCurrencyItemProps } from "../../types";
 import { formatNumber } from "../../utils/helpers";
 
@@ -12,12 +13,12 @@ const CurrencyItem = ({ title, values, minValueCurrency }: TCurrencyItemProps) =
         <div
           key={index}
           className={
-            typeof value === "number" && formatNumber(value) === minValueCurrency
+            value && formatNumber(value) === minValueCurrency
               ? "currency-item min-value"
               : "currency-item"
           }
         >
-          {typeof value === "number" ? formatNumber(value) : ""}
+          {value ? formatNumber(value) : ""}
         </div>
       ))}
     </>
